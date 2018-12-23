@@ -1,5 +1,5 @@
-# To use this software you must set constants variables first.
-# Make sure to understand storage capacity limits
+# To use this software, you must define constant variables.
+# Make sure you understand the limitations of storage capacity.
 #
 # example :
 #     1 hour video file
@@ -71,7 +71,6 @@ def cleanDirectory():
            break
     print("Enough space: %d/%d (MB)" % (get_size(),MAXDIRLENGHT))
 
-
 def main():
     while(True):
         cleanDirectory()
@@ -88,7 +87,6 @@ def main():
         camera.stop_recording()
         camera.stop_preview()
         print('File closed:'+file)
-
 
 if __name__ == "__main__":
     while(True): # Recording is more important...
